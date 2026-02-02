@@ -7,6 +7,29 @@
   <title>Upratovací plánovač BD 642</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
+  <!-- FIREBASE (vložené podľa tvojho configu) -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-analytics.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyDi9bmbWut2ph5emweyfOoa6FCF8xNUO8I",
+      authDomain: "bd-642-26-upratovanie-d2851.firebaseapp.com",
+      projectId: "bd-642-26-upratovanie-d2851",
+      storageBucket: "bd-642-26-upratovanie-d2851.firebasestorage.app",
+      messagingSenderId: "530262860262",
+      appId: "1:530262860262:web:ceef384f16e1a6f7e6f627",
+      measurementId: "G-1PB3714CD6"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+
+    // ak budeš neskôr chcieť používať Firebase aj v hlavnom skripte:
+    window.firebaseApp = app;
+  </script>
+  <!-- /FIREBASE -->
+
   <style>
     :root{
       --bg:#0b1220;
